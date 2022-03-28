@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/metToolbar"
+        android:background="#5CA2E8"
+        style="@style/Widget.MaterialComponents.ActionBar.Primary"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="Registration"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:src="@drawable/logo1"
+        android:layout_below="@id/metToolbar"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="80dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/metName"
+        android:layout_below="@id/ivLogo"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/name"
+            android:drawableStart="@drawable/ic_name"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/metEmailid"
+        android:layout_below="@id/metName"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/email_id"
+            android:drawableStart="@drawable/ic_email"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/metPassword"
+        android:layout_below="@id/metEmailid"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/password"
+            android:drawableStart="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/metConfirmpassword"
+        android:layout_below="@id/metPassword"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/confirm_password"
+            android:drawableStart="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/metEntermobile"
+        android:layout_below="@id/metConfirmpassword"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/enter_mobile"
+            android:drawableStart="@drawable/ic_phone"
+            android:inputType="phone"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_below="@id/metEntermobile"
+        android:paddingTop="15dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+         <RadioButton
+             android:id="@+id/rbMale"
+             android:text="@string/male"
+             android:textSize="20dp"
+             android:layout_marginRight="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:text="@string/female"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_below="@id/rgGender"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="@string/register"
+        android:background="#5CA2E8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</RelativeLayout>

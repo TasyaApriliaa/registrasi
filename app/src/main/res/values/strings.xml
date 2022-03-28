@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tugas2TasyaAprilia</string>
+    <string name="name">Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_mobile">Enter Mobile</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="register">Register</string>
+    <string name="phone">Phone</string>
+    <string name="name1">Name</string>
+    <string name="area">Area</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip</string>
+    <string name="email">Email</string>
+    <string name="email1">Email</string>
+
+</resources>
